@@ -26,17 +26,21 @@ const tarefas = [
     }
 ]
 
-const Item = ({item}) => (
-    <View>
-        <Image style={styles.img} resizeMode="contain" clearButtonMode="always" source={item.img} />
-        <Text style={styles.txt}>{item.nome}</Text>
-    </View>
-);
+const Item = ({item}) => {
+    return(
+        <View style={styles.container}>
+            <View style={styles.section_img}>
+                <Image style={styles.img} resizeMode="contain" clearButtonMode="always" source={item.img} />
+            </View>
+            <Text style={styles.txt}>{item.nome}</Text>
+        </View>
+    )
+}
 
 function Produtos() {
-    const renderItem = ({item}) => {
+    const renderItem = ({item, index}) => {
         return (
-          <Item item={item} />
+          <Item key={index} item={item} />
         )
     }
     return (

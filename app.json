@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "app_monitoria",
-    "slug": "app_monitoria",
+    "name": "FullStackEletro",
+    "slug": "FullStackEletro",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

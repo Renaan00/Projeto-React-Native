@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, ImageBackground, TextInput, TouchableOpacity, Alert } from 'react-native';
 
-import Fundo from '../../../assets/fundo.jpg';
+import Fundo from '../../../assets/fundo_01.jpg';
 
 import styles from './styles';
 
@@ -39,7 +39,6 @@ function Login({navigation}) {
                     <TouchableOpacity style={styles.btn} onPress={autenticacao}>
                         <Text style={styles.texto}>Entrar</Text>
                     </TouchableOpacity>
-                
                 </View>
             </ImageBackground>
         </View>
